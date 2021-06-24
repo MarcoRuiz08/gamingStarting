@@ -1,0 +1,40 @@
+/*Database Creation*/
+Create database sanapp;
+
+/*Using Database*/
+use sanapp;
+
+/*Know which database is being used*/
+select database()
+
+/*Table client*/
+create table client (
+ID_Cliente int not null,
+Name varchar(35) not null,
+Last_name varchar(35) not null,
+Email varchar(30)not null,
+Address varchar(30) not null,
+PRIMARY KEY(ID_cliente)
+);
+
+/*Table Employee*/
+create table employee (
+ID_employee int not null,
+Name varchar(35) not null,
+Last_name varchar(35) not null,
+Email varchar(30)not null,
+Address varchar(30) not null,
+Sell int not null,
+Rent int not null,
+PRIMARY KEY(ID_employee)
+);
+
+/*Table VideoGame*/
+create table videogame (
+ID_videogame int not null,
+Name varchar(35) not null,
+Gender varchar(20),
+Type varchar(10),
+Quantity int,
+PRIMARY KEY(ID_videogame)
+);
